@@ -1,0 +1,83 @@
+<html>
+<head><title>Survey Form</title>
+<style>
+#description{
+font-size:30px;
+font-family:sans-serif;
+text-align:left;
+}
+  #name-label{
+    display:block;
+  }
+  #email-label{
+    display:block;
+  }
+  #number-label{
+    display:block;
+  }
+#main{
+margin:0px 300px;
+padding:50px;
+border:1px solid white;
+background-color:#B0E0E6;
+}
+#title{
+text-align:center;
+}
+#name{
+width:500px;
+height:40px;
+border:3px solid white;
+}
+#email{
+width:500px;
+height:40px;
+border:3px solid white;
+}
+#number{
+width:500px;
+height:40px;
+border:3px solid white;}
+#dropdown{
+width:500px;
+height:40px;
+border:3px solid white;
+}
+#submit{
+width:80px;
+height:28px;
+background-color:green;
+color:white;
+}
+</style>
+</head>
+<body>
+<main><h1 id="title">freeCodeCamp Survey Form</h1></main>
+<h3 style="text-align:center; font-style:italic;font-weight:bold;">ThankYou for taking the time to fill this form</h3>
+<div id="main">
+<form id="survey-form"><label id="name-label">
+<p id="description">Name</p><input type="text" name="Name" placeholder="Enter the Name" id="name" required></label><br><label id="email-label">
+<p id="description">Email</p><input type="email" id="email" name="Email" placeholder="Enter the Email" required></label>
+<br><label id="number-label"><p id="description">Age(Optional)</p><input type="number" id="number" pattern="[0-9]" name="age" placeholder="Enter the Age" required min=12 max=30></label><br><p id="description">Which option best describes your current role?</p>
+<select placeholder="Enter the role" id="dropdown">
+<option name="Role" value="Student">Student</option>
+<option name="Role" value="Full time job">Full Time Job</option>
+<option name="Role" value="Full time learner">Full time learner</option>
+<option name="Role" value="Prefer not to say">Prefer not to say</option>
+<option name="Role" value="Other">Other</option>
+</select><br>
+<p id="description">Would you recommend freeCodecamp a friend?</p>
+<label><input type="radio" value="Definitely" name="friend" style="transform:scale(1.4);"> Definitely</label><br><br>
+<label><input type="radio" value="May be" name="friend" style="transform:scale(1.4);"> May be</label><br><br>
+<label><input type="radio" value="Not Sure" name="friend" style="transform:scale(1.4);"> Not Sure</label><br><br>
+<p id="description">What would you like to see improved</p>
+<label><input type="checkbox" name="improved" value="Front End Projects" style="transform:scale(1.4);"> Front End Projects</label><br><br>
+<label><input type="checkbox" name="improved" value="Back End Projects" style="transform:scale(1.4);"> Back End Projects</label><br><br>
+<label><input type="checkbox" name="improved" value="Data Visualization" style="transform:scale(1.4);"> Data Visualization</label><br><br>
+<label><input type="checkbox" name="improved" value="Challenges" style="transform:scale(1.4);"> Challenges</label><br>
+<p id="description">Any Comments or Suggestions</p>
+  <textarea style="width:500px; height:90px;"></textarea><br><br>
+<center><input type="Submit" id="submit"></form>
+</div>
+</body>
+</html>

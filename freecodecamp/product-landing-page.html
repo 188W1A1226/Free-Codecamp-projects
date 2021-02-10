@@ -1,0 +1,154 @@
+<html>
+<head><title>Product landing page</title>
+<style>
+#header{
+position:fixed;
+display:flex;
+border:1px solid white;
+background-color:coral;
+}
+#header-img{
+width:100px;
+height:100px;
+justify-self:center;
+}
+#header1{
+justify-self:center;
+color:rgb(0,0,139);
+}
+#nav-bar{
+padding:70px 100px;
+margin:-50px auto;
+justify-self:center;
+}
+.nav-link{
+padding:30px;
+text-decoration:none;
+font-size:30px;
+font-color:black;
+}
+a:hover{
+background-color:#C0C0C0;
+}
+#form{
+display:block;
+padding:150px 600px 0px;
+}
+#email{
+border:2px solid black;
+width:300px;
+height:30px;
+}
+#submit{
+background-color:#228B22;
+font-size:20px;
+font-color:black;
+width:180px;
+height:40px;
+margin:10px 70px;
+}
+.he{
+display:flex;
+border:1px solid white;	
+}
+p{
+align-self:flex-end;
+font-size:20px;
+font-family:FreeMono,monospace;
+}
+#img{
+padding:0px 90px;
+width:100px;
+height:100px;
+justify-self:center;
+}
+.fe{
+dispaly:flex;
+border:1px solid white;
+}
+#video{
+width:800px;
+height:500px;
+padding:0px 300px;
+}
+#container{
+display:flex;
+}
+.item1{
+line-height:2;
+height:300px;
+border-radius:10%;
+dispaly:block;
+border:3px solid white;
+margin:10px 30px;
+padding:2px 35px;
+background-color:#87CEFA;
+}
+.item1>p{
+text-align:justify;
+}
+.item1>h3{
+text-align:center;
+color:white;
+}
+a{
+text-decoration:none;
+font-size:20px;
+}
+a:hover{
+background-color:white;
+}
+</style>
+</head>
+<body>
+<header id="header">
+     <img src="https://images.assetsdelivery.com/compings_v2/zhanna26/zhanna261507/zhanna26150700008.jpg" id="header-img" alt="company logo"/>
+     <h1 id="header1">WOMAN'S HANDMADE MASTERPIECES</h1>
+     <nav id="nav-bar">
+          <a href="#about" class="nav-link">Features</a>
+          <a href="#video" class="nav-link">How it Works</a>
+          <a href="#container" class="nav-link">Pricing</a>
+     </nav>
+ </header>
+<form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+            <input type="email" name="email" id="email" placeholder="Enter your email here inorder to login" required><br><br>
+            <input type="submit" id="submit" value="GET STARTED">
+</form>
+<div id="about">
+    <div class="he">
+          <img src="https://fscomps.fotosearch.com/compc/CSP/CSP628/warranty-vector-icon-clipart__k50491021.jpg" id="img"/>
+          <p style="font-weight:800;color:mediumvioletred;">LAST LONGER- </p>
+           <p>Handcrafted by trained artists items that are handmade last longer than the mass produced items.</p>
+    </div><br>
+    <div class="he">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTsTCK0mPKFW4Jp6VudbwUGk2h4fs2TZeTpng&usqp=CAU" id="img"/>
+          <p style="font-weight:800;color:mediumvioletred;">HIGH QUALITY-</p>
+           <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your items.</p>
+    </div><br>
+    <div class="he">
+          <img src=" https://i1.wp.com/res-2.cloudinary.com/hzew3wraw/image/asset/rider1-96025c0083a7459ef80b0ce39b7a1c83.jpg?resize=500%2C422" id="img"/>
+          <p style="font-weight:800;color:mediumvioletred;">FAST SHIPPING-</p>   
+          <p>We make sure you recieve your items as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+    </div><br>
+</div>
+<div>
+    <video controls  id="video">
+        <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+    </video>
+</div><br>
+<div id="container">
+   <div class="item1">
+        <h3>HANDMADE POTS</h3>
+        <p >Contain pots of various sizes and various designs ranging from 100-100000.You can buy all the pots through our website.Click the <a href="#">POTS LINK</a></p> 
+  </div><br>
+  <div class="item1">
+      <h3>PAINTINGS</h3>
+      <p>Contains paintings of various designs ranging from 1000-1000000 with various themes so that you can give gift these paintings to someone.Click here <a href="#">PAINTINGS LINK</a></p>
+  </div><br>
+  <div class="item1">
+       <h3>DRESSESS</h3>
+       <p>Contain dresses of various designs for the boys and girls,men and women ranging from 500-1000000000.Click the <a href="#">DRESS LINK</a></p>
+  </div><br>
+</div>
+</body>
+</html>
